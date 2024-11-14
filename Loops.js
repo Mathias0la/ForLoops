@@ -90,7 +90,7 @@ function removeDuplicates(arr) {
     let unique = [];
 
     for(let i = 0; i < arr.length; i++) {
-        if(!unique.includes(arr[i])) {
+        if(!unique.includes(arr[i])) { //Sjekker om verdien i arrayet allerede eksisterer, om den ikke gjør det pushes verdien inn i arrayet, derfor vil det ikke bli duplicates
             unique.push(arr[i]);
         }
     }
